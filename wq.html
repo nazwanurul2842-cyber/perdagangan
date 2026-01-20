@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hentikan Perdagangan Satwa Liar</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        
+        body { line-height: 1.6; color: #333; background-color: #f4f4f4; }
+
+        /* Header & Navigation */
+        header {
+            background: #1a1a1a;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1541018562018-7a5482390885?auto=format&fit=crop&q=80&w=1200') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+
+        /* Responsive Grid */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 4rem 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover { background: #c0392b; }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="container" style="padding: 0;">
+            <strong>WILDSAFE</strong>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Suara Mereka Ada di Tangan Kita</h1>
+            <p>Hentikan perdagangan liar. Lindungi ekosistem demi masa depan bumi.</p>
+            <a href="#lapor" class="cta-button">Ambil Tindakan</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Mengapa Ini Penting?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Kepunahan Spesies</h3>
+                <p>Ribuan spesies terancam punah setiap tahunnya akibat perburuan ilegal yang tidak terkendali.</p>
+            </div>
+            <div class="card">
+                <h3>Keseimbangan Alam</h3>
+                <p>Hilangnya predator atau penyebar benih merusak rantai makanan dan kelestarian hutan.</p>
+            </div>
+            <div class="card">
+                <h3>Risiko Zoonosis</h3>
+                <p>Perdagangan liar meningkatkan risiko penularan penyakit dari hewan ke manusia (seperti COVID-19).</p>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #1a1a1a; color: white; text-align: center; padding: 2rem;">
+        <p>&copy; 2026 Kampanye Anti Perdagangan Liar. Dibuat untuk kesadaran bersama.</p>
+    </footer>
+
+</body>
+</html>
